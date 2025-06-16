@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BASIC T0-DO LIST</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <style>
+      /* body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+        }
+        .todo-container{
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+            padding: 20px;
+            width: 800px;
+            max-width: 1000px;
+        
+
+
+        }
+        .todo-container h1 {
+        font-size: 24px;
+        color: #333333;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .todo-container input[type="text"] {
+        width: calc(100% - 40px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+        .todo-container button{
+            width: calc(50%-10px);
+            padding: 10px;
+            margin: 5px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+
+            transition: background-color 0.3s ease;
+
+
+        }
+        .todo-container button:hover{
+            background-color: #0056b3;
+
+        }
+        .todo-list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .todo-item{
+            background-color: #f9f9f9;
+            border: 1px solid #dddddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            cursor: move;
+            transition: transform 0.2s ease;
+
+
+        }
+        .todo-item.dragging{
+            opacity: 0.5;
+
+        }
+        .todo-item button {
+        margin-left: 10px;
+        background-color: #dc3545;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .todo-item button:hover {
+        background-color: #c82333;
+      } */
+    </style>
+  </head>
+  <body>
+    <img
+      src="humans.svg"
+      alt="Decorative illustration"
+      class="bg-illustration bottom-left"
+    />
+    <img
+      src="humans2.svg"
+      alt="Decorative illustration"
+      class="bg-illustration top-right"
+    />
+
+    <div class="todo-container">
+      <h1>TO DO LIST</h1>
+      <input type="text" placeholder="Enter a To Do Item" id="todoInput" />
+      <div>
+        <button id="addButton">Add To Do Task</button>
+        <button id="deleteAllButton">Delete All</button>
+      </div>
+      <ul id="todoList" class="todo-list"></ul>
+    </div>
+  </body>
+</html>
+
+<!-- EDIT FUCNTIONALITY
+When u click on it do addEventListener
+once the task gets complete , a strike feature should be there -->
